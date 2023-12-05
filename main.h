@@ -1,14 +1,20 @@
-#ifndef MAIN_H_
-#define MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
 
+#include <limits.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 #include <stdarg.h>
-#include <limits.h>
+#include <string.h>
 
-/* The main printf prototype */
+char _putchar(char c);
 int _printf(const char *format, ...);
+void print_str(char *str);
+void print_int(int n, int base);
+void print_unsigned_hex(unsigned int n, int _case);
+void intToString(unsigned int n, char *str, int base);
+void print_unsigned_int(unsigned int n);
+void reverseString(char *str);
+void print_address(unsigned long n);
 
 #endif
-
