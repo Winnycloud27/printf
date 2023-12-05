@@ -11,8 +11,8 @@ int main(void)
 {
 	int len, len2;
 
-	len = _printf("css%ccs%scscscs", 'T', "Test");
-	len2 = printf("css%ccs%scscscs", 'T', "Test");
+	len = _printf("css%ccs%scscscs\n", 'T', "Test");
+	len2 = printf("css%ccs%scscscs\n", 'T', "Test");
 	fflush(stdout);
 	if (len != len2)
 	{
